@@ -1,4 +1,6 @@
 ### Hi 👋 I'm Daniel! 
+
+_look, I'll write something witty here later. For now, here's a bit about me from the default README suggestions_
 <!--
 **dnorton/dnorton** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
