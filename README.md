@@ -14,4 +14,5 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🌱 I’m currently learning - Data Engineering, Machine Learning, and applying DevOs principles to both
+- 🌱 currently learning - Data Engineering, Machine Learning, and applying DevOs principles to both
+- 📫 How to reach me: `@dnorton` on Twitter of course
