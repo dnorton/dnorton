@@ -1,6 +1,5 @@
 ### Hi 👋 I'm Daniel! 
 
-_look, I'll write something witty here later. For now, here's a bit about me from the default README suggestions_
 <!--
 **dnorton/dnorton** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -17,4 +16,4 @@ Here are some ideas to get you started:
 -->
 
 - 🌱 currently learning - Data Engineering, Machine Learning, and applying DevOps principles to both
-- 📫 How to reach me: `@dnorton` on Twitter of course
+- 📫 You can reach me at `@dnorton` on Twitter (or here)
