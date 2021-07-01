@@ -18,6 +18,5 @@ Here are some ideas to get you started:
 - 🌱 currently learning - Data Engineering, Machine Learning, and applying DevOps principles to both
 - 💻 Feel free to reach out about cloud computing, DevOps, python, Java, systems engineering
 - 📫 You can reach me at [@dnorton](https://twitter.com/dnorton) on Twitter
-
-_I could always use help being a kinder person_
+- 💖 kindness first
 
