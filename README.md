@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 
 - 🌱 currently learning - Typescript, GraphQL, Neo4J, and start-ups!
-- previously: Data Engineering, Machine Learning, and applying DevOps principles to both
+- previously: Data Engineering, Machine Learning, cloud architecture
 - 💻 Feel free to reach out about cloud computing, DevOps, python, Java, systems engineering
 - 📫 You can reach me at [@dnorton](https://twitter.com/dnorton) on Twitter
 - 💖 kindness first
