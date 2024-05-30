@@ -1,4 +1,3 @@
-### Hi 👋 I'm Daniel! 
 
 <!--
 **dnorton/dnorton** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -15,9 +14,9 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🌱 currently learning - Typescript, GraphQL, Neo4J, and start-ups!
+- 🌱 currently learning - GraphQL, Neo4J, GoLang!
 - previously: Data Engineering, Machine Learning, cloud architecture
 - 💻 Feel free to reach out about cloud computing, DevOps, python, Java, systems engineering
-- 📫 You can reach me at [@dnorton](https://twitter.com/dnorton) on Twitter
+- 📫 You can reach me at [@thednorton](https://www.threads.net/@thednorton) on Threads 🧵
 - 💖 kindness first
 
