@@ -14,9 +14,10 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🌱 currently learning - GraphQL, Neo4J, GoLang!
-- previously: Data Engineering, Machine Learning, cloud architecture
-- 💻 Feel free to reach out about cloud computing, DevOps, python, Java, systems engineering
+- 🌱 currently learning - GoLang!
+- previously: data engineering, cloud architecture, platform engineering
+- 💻 Feel free to reach out about AWS, trail running ⛰️, UGA football 🏈
 - 📫 You can reach me at [@thednorton](https://www.threads.net/@thednorton) on Threads 🧵
 - 💖 kindness first
+- Prost! 🍻
 
