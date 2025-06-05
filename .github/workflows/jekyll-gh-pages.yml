@@ -28,11 +28,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Create Jekyll config with theme
-        run: |
-          echo "remote_theme: pages-themes/cayman@v0.2.0" > _config.yml
-          echo "plugins:" >> _config.yml
-          echo "- jekyll-remote-theme" >> _config.yml
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
