@@ -12,6 +12,7 @@ import (
 type GPXMetadata struct {
 	Name   string `xml:"name"`
 	Time   string `xml:"time"`
+	Type   string `xml:"type"`
 	Author struct {
 		Name string `xml:"name"`
 	} `xml:"author"`
@@ -86,8 +87,11 @@ func main() {
 			route.Name = strings.TrimSuffix(file, ".gpx")
 		}
 
-		// Extract type
+		// Extract type (prefer track type, then metadata type, then default to "route")
 		route.Type = gpx.Track.Type
+		if route.Type == "" {
+			route.Type = gpx.Metadata.Type
+		}
 		if route.Type == "" {
 			route.Type = "route"
 		}

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd" version="1.1" creator="http://ridewithgps.com/">
   <metadata>
-    <name>BRR Leg 6</name>
+    <name>Blue Ridge Relay Leg 6</name>
     <link href="https://ridewithgps.com/routes/15050809">
-      <text>BRR Leg 6</text>
+      <text>Blue Ridge Relay Leg 6</text>
     </link>
     <time>2016-07-12T11:27:37Z</time>
   </metadata>
   <trk>
-    <name>BRR Leg 6</name>
+    <name>Blue Ridge Relay Leg 6</name>
+    <type>running</type>
     <trkseg>
       <trkpt lat="36.3891" lon="-81.50631">
         <ele>958.9</ele>

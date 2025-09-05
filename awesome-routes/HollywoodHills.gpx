@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx xmlns="http://www.topografix.com/GPX/1/1" creator="Footpath/4.9.15/4521 iOS/17.4.1" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxtpx="https://www8.garmin.com/xmlschemas/TrackPointExtensionv2.xsd" xmlns:gpxx="https://www8.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
-    <name>Untitled Route</name>
+    <name>Hollywood Hills</name>
     <link href="https://footpathapp.com">
       <text>Footpath</text>
     </link>
     <time>2024-03-30T22:00:03Z</time>
+    <type>running</type>
   </metadata>
   <rte>
-    <name>Untitled Route</name>
+    <name>Hollywood Hills</name>
+    <type>running</type>
     <rtept lat="34.10411" lon="-118.33838">
       <ele>121.81</ele>
     </rtept>
