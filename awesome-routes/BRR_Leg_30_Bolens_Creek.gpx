@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd" version="1.1" creator="http://ridewithgps.com/">
   <metadata>
-    <name>BRR Leg 30 Bolens Creek</name>
+    <name>Blue Ridge Relay Leg 30 Bolens Creek</name>
+    <type>running</type>
     <link href="https://ridewithgps.com/routes/40610298">
-      <text>BRR Leg 30 Bolens Creek</text>
+      <text>Blue Ridge Relay Leg 30 Bolens Creek</text>
     </link>
     <time>2022-08-16T15:42:55Z</time>
   </metadata>
   <trk>
-    <name>BRR Leg 30 Bolens Creek</name>
+    <name>Blue Ridge Relay Leg 30 Bolens Creek</name>
     <trkseg>
       <trkpt lat="35.89074" lon="-82.28216">
         <ele>859.9</ele>

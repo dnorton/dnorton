@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx xmlns="http://www.topografix.com/GPX/1/1" creator="Footpath/4.9.15/4521 iOS/17.4.1" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxtpx="https://www8.garmin.com/xmlschemas/TrackPointExtensionv2.xsd" xmlns:gpxx="https://www8.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
-    <name>Untitled Route</name>
+    <name>Runyon Canyon</name>
     <link href="https://footpathapp.com">
       <text>Footpath</text>
     </link>
     <time>2024-04-02T00:55:27Z</time>
   </metadata>
   <trk>
-    <name>Untitled Route</name>
+    <name>Runyon Canyon</name>
+    <type>running</type>
     <trkseg>
       <trkpt lat="34.10328" lon="-118.33874">
         <ele>119.73</ele>
