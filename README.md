@@ -2,12 +2,19 @@
 
 Hi, I'm Daniel! I'm a principal software engineer at [The Contract Network](https://www.thecontractnetwork.com/)
 
-Happy to chat about AWS, trail running, 🍺, or UGA football.
+Happy to chat about AWS, running, craft beer 🍺, or UGA football. 
 
-Check out some of my favorite [running and cycling routes](./awesome-routes/).
+### Where to Find Me
 
-You can find me on [Threads](https://www.threads.net/@thednorton) or [Bluesky](https://bsky.app/profile/dnorton.dev).
+- [Threads](https://www.threads.net/@thednorton) 
+- [Bluesky](https://bsky.app/profile/dnorton.dev)
+- [Strava](https://www.strava.com/athletes/thednorton)
 
-Kindness first. Prost! 🍻
+### My Favorite Pages
+
+- [Awesome Routes](./awesome-routes/): A collection of my favorite running and cycling routes.
+- [My Dev Notes](https://notes.dnorton.org): A personal wiki of development notes and tips.
+
+
 
 <!--_proof: proven770a8d_-->
