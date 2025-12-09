@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="profile-section">
+                <img src="{{ 'assets/profile.jpg' | relative_url }}" alt="Daniel Norton" class="profile-pic">
+                <div class="header-text">
+                    <h1>{{ page.title }}</h1>
+                    <p class="subtitle">Principal Software Engineer</p>
+                </div>
+            </div>
+            <nav>
+                <!-- Add navigation if needed later -->
+            </nav>
+        </header>
+
+        <main class="content">
+            {{ content }}
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; {{ site.time | date: '%Y' }} Daniel Norton. Built with Jekyll.</p>
+            <div class="social-links">
+                <a href="https://github.com/dnorton" target="_blank" aria-label="GitHub">GitHub</a>
+                <a href="https://www.threads.net/@thednorton" target="_blank" aria-label="Threads">Threads</a>
+                <a href="https://bsky.app/profile/dnorton.dev" target="_blank" aria-label="Bluesky">Bluesky</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
