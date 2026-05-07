@@ -10,6 +10,8 @@ Happy to chat about AWS, running, craft beer 🍺, or UGA football.
 
 ### My Favorite Pages
 
+- [Race Reports](./race-reports/)
+  Race reports — marathons, ultras, and everything in between.
 - [Awesome Routes](./awesome-routes/)
   A collection of my favorite running and cycling routes.
 - [My Dev Notes](https://notes.dnorton.org)

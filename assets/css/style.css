@@ -142,6 +142,40 @@ li p {
     font-size: 0.95rem;
 }
 
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+th {
+    text-align: left;
+    padding: 0.6rem 1rem;
+    background: var(--card-bg);
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+td {
+    padding: 0.55rem 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+    color: var(--text-secondary);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: var(--card-bg);
+}
+
 /* Footer */
 .site-footer {
     margin-top: 4rem;

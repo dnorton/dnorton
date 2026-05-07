@@ -2,7 +2,7 @@
 
 This is a collection of some of my favorite routes for various activities. The list is not exhaustive and will be updated over time.
 
-📊 **Total Routes:** 7
+📊 **Total Routes:** 8
 
 ## Routes
 
@@ -13,9 +13,10 @@ This is a collection of some of my favorite routes for various activities. The l
 | Blue Ridge Relay Leg 18 | running | [Ride with GPS](https://ridewithgps.com/routes/14428362) | 34 KB | [📁](./BRR_Leg_18.gpx) |
 | Blue Ridge Relay Leg 30 Bolens Creek | running | [Ride with GPS](https://ridewithgps.com/routes/40610298) | 33 KB | [📁](./BRR_Leg_30_Bolens_Creek.gpx) |
 | Carmax Richmond Half Marathon | running | [Ride with GPS](https://ridewithgps.com/routes/44112598) | 33 KB | [📁](./Carmax_Richmond_Half_Marathon.gpx) |
+| Delaware Marathon BQ!!! | running |  | 4001 KB | [📁](./Delaware_Marathon.gpx) |
 | Hollywood Hills | running | [Footpath](https://footpathapp.com) | 44 KB | [📁](./HollywoodHills.gpx) |
 | Runyon Canyon | running | [Footpath](https://footpathapp.com) | 47 KB | [📁](./Runyon.gpx) |
 
 ## Route Types
 
-- **Running**: 7 routes
+- **Running**: 8 routes
