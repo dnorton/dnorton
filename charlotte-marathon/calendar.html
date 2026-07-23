@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Charlotte Marathon 2026 — Training Calendar</title>
+<style>
+  :root {
+    color-scheme: light;
+    --re-entry: #eef0f2;
+    --base: #e3edf9;
+    --base-accent: #2f6fb0;
+    --specific: #e2f3e8;
+    --specific-accent: #2f8f52;
+    --cutback: #fdf1e0;
+    --cutback-accent: #c07a1e;
+    --peak: #fbe6e6;
+    --peak-accent: #b03a3a;
+    --taper: #f1e9f7;
+    --taper-accent: #7a4ba0;
+    --race: #fff3c4;
+    --race-accent: #a3790a;
+    --ink: #1f2937;
+    --muted: #6b7280;
+    --border: #d9dde3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    padding: 28px 32px 48px;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 0 0 4px;
+  }
+  .subtitle {
+    color: var(--muted);
+    margin: 0 0 18px;
+    font-size: 13.5px;
+  }
+  .summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    background: #fafbfc;
+  }
+  .card .label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    margin-bottom: 3px;
+  }
+  .card .value {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin: 4px 0 20px;
+    font-size: 12.5px;
+  }
+  .legend span.swatch {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle;
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12.6px;
+  }
+  thead th {
+    position: sticky;
+    top: 0;
+    background: #1f2937;
+    color: #fff;
+    padding: 8px 6px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    z-index: 2;
+  }
+  tbody td {
+    border: 1px solid var(--border);
+    padding: 7px 6px;
+    vertical-align: top;
+  }
+  td.wk { font-weight: 700; text-align: center; }
+  td.dates { white-space: nowrap; color: var(--muted); }
+  td.phase { font-weight: 600; white-space: nowrap; }
+  td.mileage { text-align: center; font-weight: 700; white-space: nowrap; }
+  tr.re-entry td { background: var(--re-entry); }
+  tr.re-entry td.phase { color: #4b5563; }
+  tr.base td { background: var(--base); }
+  tr.base td.phase { color: var(--base-accent); }
+  tr.specific td { background: var(--specific); }
+  tr.specific td.phase { color: var(--specific-accent); }
+  tr.cutback td { background: var(--cutback); }
+  tr.cutback td.phase { color: var(--cutback-accent); }
+  tr.peak td { background: var(--peak); }
+  tr.peak td.phase { color: var(--peak-accent); }
+  tr.taper td { background: var(--taper); }
+  tr.taper td.phase { color: var(--taper-accent); }
+  tr.raceweek td { background: var(--race); }
+  tr.raceweek td.phase { color: var(--race-accent); }
+  .ns-tag {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1e40af;
+    border-radius: 4px;
+    padding: 0 5px;
+    font-size: 10.5px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .vo2-tag {
+    display: inline-block;
+    background: #ede9fe;
+    color: #5b21b6;
+    border-radius: 4px;
+    padding: 0 5px;
+    font-size: 10.5px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .mp-tag {
+    display: inline-block;
+    background: #dcfce7;
+    color: #166534;
+    border-radius: 4px;
+    padding: 0 5px;
+    font-size: 10.5px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .race-tag {
+    display: inline-block;
+    background: #a3790a;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .goal-flag {
+    display: inline-block;
+    background: #c07a1e;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 3px;
+  }
+  .cap-flag {
+    display: inline-block;
+    background: #b03a3a;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 3px;
+  }
+  .heat-flag {
+    font-size: 10.5px;
+    color: #b45309;
+  }
+  .notes {
+    margin-top: 26px;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+  }
+  .notes h2 {
+    font-size: 15px;
+    margin: 0 0 8px;
+  }
+  .notes ul {
+    margin: 0 0 16px;
+    padding-left: 20px;
+  }
+  .notes li { margin-bottom: 5px; }
+  .paces {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 8px 18px;
+    font-size: 12.5px;
+    margin-bottom: 16px;
+  }
+  .paces div span.k { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<h1>Charlotte Marathon 2026 — Training Calendar</h1>
+<p class="subtitle">Novant Health Charlotte Marathon · Saturday, November 14, 2026 · 17-week block from a July 20 start (post-vacation) · Updated Jul 17, 2026</p>
+
+<div class="summary-cards">
+  <div class="card"><div class="label">Race Day</div><div class="value">Nov 14, 2026</div></div>
+  <div class="card"><div class="label">Plan Start</div><div class="value">Jul 20, 2026</div></div>
+  <div class="card"><div class="label">Total Weeks</div><div class="value">17</div></div>
+  <div class="card"><div class="label">Goal A</div><div class="value">3:05:00 (7:00/mi)</div></div>
+  <div class="card"><div class="label">Goal B</div><div class="value">3:07:00 (7:03/mi)</div></div>
+  <div class="card"><div class="label">Peak Volume</div><div class="value">60 mpw</div></div>
+</div>
+
+<div class="legend">
+  <div><span class="swatch" style="background:var(--re-entry)"></span>Re-Entry</div>
+  <div><span class="swatch" style="background:var(--base)"></span>Base Build</div>
+  <div><span class="swatch" style="background:var(--cutback)"></span>Cutback</div>
+  <div><span class="swatch" style="background:var(--specific)"></span>Marathon-Specific Build</div>
+  <div><span class="swatch" style="background:var(--peak)"></span>Peak</div>
+  <div><span class="swatch" style="background:var(--taper)"></span>Taper</div>
+  <div><span class="swatch" style="background:var(--race)"></span>Race Week</div>
+  <div><span class="ns-tag">NS</span>&nbsp;Norwegian Singles</div>
+  <div><span class="vo2-tag">VO2</span>&nbsp;VO2/Interval work</div>
+  <div><span class="mp-tag">MP</span>&nbsp;Marathon-Pace work</div>
+</div>
+
+<table>
+<thead>
+<tr>
+  <th>Wk</th>
+  <th>Dates</th>
+  <th>Phase</th>
+  <th>Mileage</th>
+  <th>Mon</th>
+  <th>Tue — Quality 1</th>
+  <th>Wed</th>
+  <th>Thu — Quality 2</th>
+  <th>Fri</th>
+  <th>Sat — Long Run</th>
+  <th>Sun</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="re-entry">
+  <td class="wk">1</td><td class="dates">Jul 20–26</td><td class="phase">Re-Entry</td><td class="mileage">35</td>
+  <td>Strength (no run)</td>
+  <td><span class="ns-tag">NS</span> 1 of 5<br>3×15min @ sub-threshold (7:05–7:15/mi, HR 148–153), 3min float<br><span class="heat-flag">treadmill — heat window</span></td>
+  <td>AM Easy + PM Run Club</td>
+  <td>Easy 6mi + 4×20" strides</td>
+  <td>Easy recovery</td>
+  <td>12mi easy (7:45–8:15/mi)</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="base">
+  <td class="wk">2</td><td class="dates">Jul 27–Aug 2</td><td class="phase">Base Build 1</td><td class="mileage">42</td>
+  <td>Strength (no run)</td>
+  <td><span class="ns-tag">NS</span> 2 of 5<br>3×20min @ sub-threshold, 3min float<br><span class="heat-flag">treadmill — heat window</span></td>
+  <td>AM Easy + PM Run Club</td>
+  <td>6×400m @ 6:20–6:30/mi, 90s jog</td>
+  <td>Easy recovery</td>
+  <td>14mi easy</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="base">
+  <td class="wk">3</td><td class="dates">Aug 3–9</td><td class="phase">Base Build 2</td><td class="mileage">46</td>
+  <td>Strength (no run)</td>
+  <td><span class="ns-tag">NS</span> 3 of 5<br>40min continuous @ sub-threshold<br><span class="heat-flag">treadmill — heat window</span></td>
+  <td>AM Easy + PM Run Club</td>
+  <td>5×600m @ VO2 pace, 2min jog</td>
+  <td>Easy recovery</td>
+  <td>15mi, last 2mi @ MLR pace</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="base">
+  <td class="wk">4</td><td class="dates">Aug 10–16</td><td class="phase">Base Build 3</td><td class="mileage">50</td>
+  <td>Strength (no run)</td>
+  <td><span class="ns-tag">NS</span> 4 of 5<br>50min continuous @ sub-threshold<br><span class="heat-flag">treadmill — heat window</span></td>
+  <td>AM Easy + PM Run Club</td>
+  <td>8×400m @ VO2 pace</td>
+  <td>Easy recovery</td>
+  <td>16mi + 6×20" strides</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="cutback">
+  <td class="wk">5</td><td class="dates">Aug 17–23</td><td class="phase">Cutback 1</td><td class="mileage">40</td>
+  <td>Strength (no run)</td>
+  <td><span class="ns-tag">NS</span> 5 of 5 (final — hold)<br>50min continuous @ sub-threshold<br><span class="heat-flag">treadmill — heat window</span></td>
+  <td>AM Easy + PM Run Club</td>
+  <td>Easy + strides</td>
+  <td>Easy recovery</td>
+  <td>13mi easy</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="base">
+  <td class="wk">6</td><td class="dates">Aug 24–30</td><td class="phase">Base Build 4</td><td class="mileage">52</td>
+  <td>Strength (no run)</td>
+  <td><span class="vo2-tag">VO2</span> NS retires — Tue converts<br>5×1000m @ VO2 pace</td>
+  <td>AM Easy + PM Run Club</td>
+  <td>Threshold: 4mi continuous @ 6:40–6:45/mi<br><span class="heat-flag">treadmill — heat window</span></td>
+  <td>Easy recovery</td>
+  <td>17mi w/ 3mi @ MP embedded</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="specific">
+  <td class="wk">7</td><td class="dates">Aug 31–Sep 6</td><td class="phase">Specific Build 1</td><td class="mileage">54</td>
+  <td>Strength (no run)</td>
+  <td><span class="vo2-tag">VO2</span> 6×800m @ VO2 pace</td>
+  <td>AM Easy + PM Run Club</td>
+  <td><span class="mp-tag">MP</span> 2mi tempo + 3mi @ MP (7:00–7:03/mi)</td>
+  <td>Easy recovery</td>
+  <td>18mi w/ 8mi @ MP</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="specific">
+  <td class="wk">8</td><td class="dates">Sep 7–13</td><td class="phase">Specific Build 2</td><td class="mileage">57</td>
+  <td>Strength (no run)</td>
+  <td><span class="mp-tag">MP</span> 5×1mi @ MP, 60s jog</td>
+  <td>AM Easy + PM Run Club</td>
+  <td>Threshold: 5mi continuous @ 6:40–6:45/mi</td>
+  <td>Easy recovery</td>
+  <td>19mi w/ 10mi @ MP<br><span class="heat-flag">fueling protocol: 90–100g/hr</span></td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="cutback">
+  <td class="wk">9</td><td class="dates">Sep 14–20</td><td class="phase">Cutback 2</td><td class="mileage">46</td>
+  <td>Strength (no run)</td>
+  <td>Easy + strides</td>
+  <td>AM Easy + PM Run Club</td>
+  <td>Tempo (short): 3mi @ tempo</td>
+  <td>Easy recovery</td>
+  <td>14mi easy<br><span class="goal-flag">GOAL REVIEW CHECKPOINT</span></td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="specific">
+  <td class="wk">10</td><td class="dates">Sep 21–27</td><td class="phase">Specific Build 3</td><td class="mileage">60</td>
+  <td>Strength (no run)</td>
+  <td><span class="vo2-tag">VO2</span> 6×1000m @ VO2 pace</td>
+  <td>AM Easy + PM Run Club</td>
+  <td><span class="mp-tag">MP</span> 3mi tempo + 4mi @ MP</td>
+  <td>Easy recovery</td>
+  <td>20mi w/ 12mi @ MP<br>fueling protocol</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="specific">
+  <td class="wk">11</td><td class="dates">Sep 28–Oct 4</td><td class="phase">Specific Build 4</td><td class="mileage">60</td>
+  <td>Strength (no run)</td>
+  <td><span class="mp-tag">MP</span> 6×1mi @ MP, 60s jog</td>
+  <td>AM Easy + PM Run Club</td>
+  <td>Threshold: 6mi continuous tempo</td>
+  <td>Easy recovery</td>
+  <td>20mi w/ 12mi @ MP<br>fueling protocol</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="peak">
+  <td class="wk">12</td><td class="dates">Oct 5–11</td><td class="phase">Peak 1 + Sim</td><td class="mileage">60</td>
+  <td>Strength (no run)</td>
+  <td><span class="vo2-tag">VO2</span> 5×1000m @ VO2 pace</td>
+  <td>AM Easy + PM Run Club</td>
+  <td><span class="mp-tag">MP</span> 3mi tempo + 3mi @ MP</td>
+  <td>Easy recovery</td>
+  <td><b>20mi RACE SIMULATION</b><br>14mi @ MP · full race-day fueling<br><span class="cap-flag">CAPPED AT 20mi (was 22mi/16mi MP)</span></td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="peak">
+  <td class="wk">13</td><td class="dates">Oct 12–18</td><td class="phase">Peak 2</td><td class="mileage">60</td>
+  <td>Strength (no run)</td>
+  <td><span class="mp-tag">MP</span> 4×1.5mi @ MP</td>
+  <td>AM Easy + PM Run Club</td>
+  <td>Threshold: 5mi tempo</td>
+  <td>Easy recovery</td>
+  <td>18mi w/ 10mi @ MP</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="taper">
+  <td class="wk">14</td><td class="dates">Oct 19–25</td><td class="phase">Taper 1</td><td class="mileage">50</td>
+  <td>Strength (no run)</td>
+  <td><span class="vo2-tag">VO2</span> 5×600m @ VO2 pace</td>
+  <td>AM Easy + PM Run Club</td>
+  <td><span class="mp-tag">MP</span> 2mi tempo + 3mi @ MP</td>
+  <td>Easy recovery</td>
+  <td>16mi w/ 8mi @ MP</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="taper">
+  <td class="wk">15</td><td class="dates">Oct 26–Nov 1</td><td class="phase">Taper 2</td><td class="mileage">40</td>
+  <td>Strength (no run)</td>
+  <td><span class="mp-tag">MP</span> 3×1mi @ MP</td>
+  <td>AM Easy + PM Run Club</td>
+  <td>Tempo (short): 3mi @ tempo</td>
+  <td>Easy recovery</td>
+  <td>12mi w/ 4mi @ MP</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="taper">
+  <td class="wk">16</td><td class="dates">Nov 2–8</td><td class="phase">Taper 3</td><td class="mileage">30</td>
+  <td>Strength (no run)</td>
+  <td>Easy + strides</td>
+  <td>AM Easy + PM Run Club</td>
+  <td><span class="mp-tag">MP</span> tune-up: 3mi @ MP, controlled</td>
+  <td>Easy recovery</td>
+  <td>8mi easy</td>
+  <td>Easy / rest</td>
+</tr>
+
+<tr class="raceweek">
+  <td class="wk">17</td><td class="dates">Nov 9–14</td><td class="phase">Race Week</td><td class="mileage">20 + race</td>
+  <td>Strength (light/optional)</td>
+  <td>Shakeout 4mi + 4×20" strides @ MP effort</td>
+  <td>AM Easy + PM Run Club (short)</td>
+  <td>Shakeout 3mi easy + strides</td>
+  <td>Rest / travel</td>
+  <td><span class="race-tag">RACE DAY — Nov 14</span><br>Goal A 3:05 / Goal B 3:07</td>
+  <td>—</td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="notes">
+  <h2>Target Paces &amp; HR Zones</h2>
+  <div class="paces">
+    <div><span class="k">Easy / Recovery:</span> 8:15–8:45/mi</div>
+    <div><span class="k">Long Run:</span> 7:45–8:15/mi</div>
+    <div><span class="k">MLR (MP segments):</span> 7:00–7:05/mi</div>
+    <div><span class="k">Marathon Pace (Goal A):</span> 7:00/mi</div>
+    <div><span class="k">Marathon Pace (Goal B):</span> 7:03/mi</div>
+    <div><span class="k">Tempo:</span> 6:40–6:45/mi</div>
+    <div><span class="k">Intervals / VO2:</span> 6:20–6:30/mi</div>
+    <div><span class="k">Norwegian Singles (sub-threshold):</span> 7:05–7:15/mi, HR 148–153</div>
+    <div><span class="k">Threshold (Z4):</span> 158–165 bpm, capped</div>
+  </div>
+
+  <h2>Norwegian Singles — What &amp; Why</h2>
+  <ul>
+    <li>Runs continuously in the Tuesday slot for <b>Weeks 1–5</b> (Jul 20–Aug 23) — five sessions total, progressing 3×15min → 3×20min → 40min continuous → 50min continuous → 50min continuous (hold), then retires as Tuesday converts to standard VO2/interval work in Week 6.</li>
+    <li>Target: sub-threshold effort (~2.0–2.5 mmol/L), proxied by HR 148–153 bpm and pace 7:05–7:15/mi — deliberately sub-maximal and repeatable, not a hero effort. This is the "singles" version: one session per day, unlike the true Norwegian double-threshold protocol.</li>
+    <li>Purpose: raise the aerobic-threshold ceiling early, before marathon-specific MP and VO2 work take over the Tuesday/Thursday slots in the build proper.</li>
+    <li>Run on the treadmill through the heat window (see below) so effort stays controlled and comparable week to week.</li>
+  </ul>
+
+  <h2>Tuesday / Thursday Quality-Day Assignment</h2>
+  <ul>
+    <li><b>Weeks 1–5:</b> Tue = Norwegian Singles (sub-threshold). Thu = VO2/Interval work.</li>
+    <li><b>Week 6 onward:</b> Tue = VO2/Interval work, Thu = Tempo/Threshold + MP work — this reverts to the original day assignment once NS retires, rather than carrying forward an earlier version of this calendar that had swapped the two (Tue = Tempo/Threshold, Thu = VO2/Intervals) for the whole block. Flagging this explicitly since it's a change from what was previously published.</li>
+  </ul>
+
+  <h2>Standing Protocols</h2>
+  <ul>
+    <li><b>Heat protocol (through mid-September):</b> Tuesday/Thursday quality sessions on treadmill with Wahoo Tickr for pace precision; outdoor easy runs and long runs governed by HR caps, not pace, when dew point exceeds 65°F.</li>
+    <li><b>PTT protocol (daily, non-negotiable):</b> 45-second single-leg isometric hovers ×2/day, big-toe anchor cue, cadence target 178–182 spm. Rate awareness weekly (target ≤1/10); if it exceeds 2/10, extend the current cutback week by one.</li>
+    <li><b>Fueling:</b> 90–100g carbs/hour with water-chaser rule on every run 16mi+, starting Week 8. Sodium pre-load (1,000mg) the night before and morning of the race-simulation long run and race day itself.</li>
+    <li><b>Goal Review Checkpoint (Week 9, Sep 14–20):</b> assess whether tempo and MP workouts are hitting targets comfortably. If yes, stay at Goal A (3:05). If it's a grind, shift to Goal B (3:07–3:08) — still a significant PR over the 3:15:30 Delaware time.</li>
+  </ul>
+
+  <h2>What Changed in This Update (Jul 17, 2026)</h2>
+  <ul>
+    <li><b>Norwegian Singles extended and re-sequenced:</b> previously ran every other week (Weeks 2, 4, 6) as broken-rep sessions (5×6min → 6×6min → 6×8min). Now runs continuously Weeks 1–5 as a true progression (3×15min → 3×20min → 40min cont. → 50min cont. → 50min cont. hold), retiring one week earlier (Week 6 instead of Week 7) to match the reference plan's updated Jul 16 schedule note.</li>
+    <li><b>Tuesday/Thursday quality-day assignment reverted from Week 6 on:</b> Tue is now VO2/Intervals and Thu is now Tempo/Threshold + MP, undoing the swap this calendar had previously documented (Tue = Tempo/Threshold, Thu = VO2/Intervals for the full block). This follows the reference material's original day template literally now that NS has vacated Tuesday. Workout content itself wasn't changed — only which day of the week it lands on.</li>
+    <li><b>Week 12 race-simulation long run capped at 20mi:</b> was 22mi total w/ 16mi @ MP, exceeding a stated 20-mile peak long-run cap that the reference material flagged as an unresolved conflict without giving its rationale (likely PTT-tendon-related, but not confirmed). Trimmed to 20mi total w/ 14mi @ MP, holding roughly the same MP/total ratio. Week 12 total volume also dropped 62→60mpw, and the "Peak Volume" summary card was updated to reflect the new mileage ceiling (now a four-way tie at 60mpw across Weeks 10–13).</li>
+    <li>Original plan assumed a June 11 start; this rebuild starts July 20, after the South Africa trip, giving 17 weeks instead of 22 — about 5 weeks lost, concentrated out of base-build volume rather than taper.</li>
+    <li>Taper held at 4 weeks (Oct 19–Nov 14) to protect the tendon and consolidate MP-specific gains rather than cut recovery time.</li>
+  </ul>
+</div>
+
+
+</body></html>
