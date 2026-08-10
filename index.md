@@ -4,7 +4,7 @@ title: Daniel Norton
 description: Principal Software Engineer
 ---
 
-Hi, I'm Daniel! I'm a principal software engineer at [The Contract Network](https://www.thecontractnetwork.com/).
+Hi, I'm Daniel! I'm a principal software engineer at [WCG](https://wcgclinical.com).
 
 Happy to chat about AWS, running, craft beer 🍺, or UGA football.
 
