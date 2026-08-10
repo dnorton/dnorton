@@ -8,7 +8,7 @@ Hi, I'm Daniel! I'm a principal software engineer at [The Contract Network](http
 
 Happy to chat about AWS, running, craft beer 🍺, or UGA football.
 
-### My Favorite Pages
+### Pages
 
 - [Awesome Routes](./awesome-routes/)
   A collection of my favorite running and cycling routes.
