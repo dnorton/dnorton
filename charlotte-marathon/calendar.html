@@ -184,6 +184,39 @@
     font-size: 10.5px;
     color: #b45309;
   }
+  .race-day-tag {
+    display: inline-block;
+    background: #a3790a;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 10.5px;
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+  .revised-flag {
+    display: inline-block;
+    background: #b03a3a;
+    color: #fff;
+    border-radius: 4px;
+    padding: 2px 7px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 3px;
+  }
+  .was-note {
+    display: block;
+    font-size: 11px;
+    color: #b45309;
+    margin-top: 4px;
+  }
+  .restored-note {
+    display: block;
+    font-size: 11px;
+    color: #2f8f52;
+    margin-top: 4px;
+    font-weight: 600;
+  }
   .notes {
     margin-top: 26px;
     border-top: 1px solid var(--border);
@@ -211,7 +244,7 @@
 <body>
 
 <h1>Charlotte Marathon 2026 — Training Calendar</h1>
-<p class="subtitle">Novant Health Charlotte Marathon · Saturday, November 14, 2026 · 17-week block from a July 20 start (post-vacation) · Updated Aug 6, 2026</p>
+<p class="subtitle">Novant Health Charlotte Marathon · Saturday, November 14, 2026 · 17-week block from a July 20 start (post-vacation) · Updated Aug 18, 2026</p>
 
 <div class="summary-cards">
   <div class="card"><div class="label">Race Day</div><div class="value">Nov 14, 2026</div></div>
@@ -311,7 +344,7 @@
 <tr class="base">
   <td class="wk">6</td><td class="dates">Aug 24–30</td><td class="phase">Base Build 4</td><td class="mileage">52</td>
   <td>Strength (no run)</td>
-  <td><span class="vo2-tag">VO2</span> NS retires — Tue converts<br>5×1000m @ 6:05–6:15/mi<br><span class="heat-flag">recalibrated from 6:20–6:30 — see Aug 6 note</span></td>
+  <td><span class="vo2-tag">VO2</span> NS retires — Tue converts<br>5×1000m @ 6:05–6:15/mi<span class="was-note">recalibrated from 6:20–6:30 — see Aug 6 note</span></td>
   <td>AM Easy + PM Run Club</td>
   <td>Threshold: 4mi continuous @ 6:40–6:45/mi<br><span class="heat-flag">treadmill — heat window</span></td>
   <td>Easy recovery</td>
@@ -320,25 +353,25 @@
 </tr>
 
 <tr class="specific">
-  <td class="wk">7</td><td class="dates">Aug 31–Sep 6</td><td class="phase">Specific Build 1</td><td class="mileage">~35<br><span class="cap-flag">revised</span></td>
+  <td class="wk">7</td><td class="dates">Aug 31–Sep 6</td><td class="phase">Specific Build 1</td><td class="mileage">~35<span class="revised-flag">revised</span></td>
   <td>Strength (no run)</td>
-  <td><span class="vo2-tag">VO2</span> 6×800m @ 6:05–6:15/mi<br><span class="heat-flag">recalibrated — see Aug 6 note</span></td>
+  <td><span class="vo2-tag">VO2</span> 6×800m @ 6:05–6:15/mi<span class="was-note">recalibrated — see Aug 6 note</span></td>
   <td>AM Easy + PM Run Club</td>
-  <td>Easy + 4–6×20" strides<br><span class="heat-flag">was MP: 2mi tempo + 3mi @ MP — pulled back, 3 days out from goal 10K</span></td>
+  <td>Easy + 4–6×20" strides<span class="was-note">was MP: 2mi tempo + 3mi @ MP — pulled back, 3 days out from goal 10K</span></td>
   <td>Easy recovery, shortened (pre-race shakeout)</td>
-  <td>4–6mi easy + strides only<br><span class="cap-flag">was 18mi w/ 8mi @ MP — cut, see race note</span></td>
-  <td><b>10K — GOAL RACE</b><br><a href="https://aroundthecrown10k.com/" target="_blank" rel="noopener">Around the Crown 10K</a><br>Topo Specter 3 · counts as week's quality stimulus</td>
+  <td>4–6mi easy + strides only<span class="was-note">was 18mi w/ 8mi @ MP — cut, see race note</span></td>
+  <td><span class="race-day-tag">10K — GOAL RACE</span> <a href="https://aroundthecrown10k.com/" target="_blank" rel="noopener">Around the Crown 10K</a><br>Topo Specter 3 · counts as week's quality stimulus</td>
 </tr>
 
 <tr class="specific">
-  <td class="wk">8</td><td class="dates">Sep 7–13</td><td class="phase">Specific Build 2</td><td class="mileage">~36<br><span class="cap-flag">revised</span></td>
+  <td class="wk">8</td><td class="dates">Sep 7–13</td><td class="phase">Specific Build 2</td><td class="mileage">~54<span class="revised-flag">revised</span></td>
   <td>Strength (no run)</td>
-  <td>Easy or strides only<br><span class="heat-flag">was MP 5×1mi — only ~48hr post-10K, softened</span></td>
+  <td><span class="mp-tag">MP</span> 5×1mi @ MP, 60s jog<span class="was-note">was softened to easy/strides (only ~48hr post-10K)</span><span class="restored-note">restored — a 1-mile race is a low-glycogen, low-damage neuromuscular effort, not a 10K; no reason to sacrifice this quality dose</span></td>
   <td>AM Easy + PM Run Club</td>
-  <td><span class="mp-tag">Q1</span> Threshold: 5mi continuous @ 6:40–6:45/mi<br><span class="heat-flag">now week's first quality dose — 4 full days post-10K</span></td>
+  <td>Q1 Threshold: 5mi continuous @ 6:40–6:45/mi<span class="was-note">week's first quality dose — 4 full days post-10K</span></td>
   <td>Easy recovery</td>
-  <td><b>1 MILE — GOAL RACE</b><br><a href="https://southendshuffle.raceroster.com/" target="_blank" rel="noopener">South End Shuffle</a><br>~1.5mi easy to venue + race + ~1.5mi easy back (~4–5mi total)<br><span class="cap-flag">was 19mi w/ 10mi @ MP — cut, race is the day's stimulus</span></td>
-  <td>Easy / rest</td>
+  <td><span class="race-day-tag">1 MILE — GOAL RACE</span> <a href="https://southendshuffle.raceroster.com/" target="_blank" rel="noopener">South End Shuffle</a><br>~1.5mi easy to venue + race + ~1.5mi easy back (~4–5mi total)</td>
+  <td>Long run, ~19mi w/ 10mi @ MP<span class="was-note">was Easy/rest — Saturday's long run displaced by the race</span><span class="restored-note">restored — do not gut the week's volume for a low-stakes 5-min effort; MP segment conditional on how legs feel post-race</span></td>
 </tr>
 
 <tr class="cutback">
@@ -480,19 +513,27 @@
     <li><b>Goal Review Checkpoint (Week 9, Sep 14–20):</b> assess whether tempo and MP workouts are hitting targets comfortably. If yes, stay at Goal A (3:05). If it's a grind, shift to Goal B (3:07–3:08) — still a significant PR over the 3:15:30 Delaware time.</li>
   </ul>
 
-  <h2>What Changed in This Update (Aug 6, 2026)</h2>
+  <h2>What Changed in This Update (Aug 18, 2026)</h2>
   <ul>
-    <li><b>VO2/Interval pace recalibrated from 6:20–6:30/mi to 6:05–6:15/mi for Weeks 6–7.</b> The original 6:20–6:30/mi target was flagged as slower than current 10K pace (~6:20/mi) — by Daniels' I-pace framework, true VO2max-eliciting Interval pace should be faster than 10K pace (10K is sustained ~35–45+ min, sub-maximal relative to VO2max; Interval pace targets efforts sustainable ~6–10min, i.e. roughly 3K–5K effort), so a rep pace at or slower than 10K pace lands in threshold/cruise-interval territory rather than true VO2max stimulus. Recalibrated to ~15–20 sec/mi faster than stated 10K pace. Applied now to Week 6 (5×1000m) and Week 7 (6×800m) — these are the sessions explicitly built as the pace-checkpoint for this phase. Weeks 1–5's shorter 400m/600m sessions are left as executed; not worth relitigating early-phase work that already served its bridging purpose.</li>
-    <li><b>Week 10 (6×1000m) and Week 12 (5×1000m) VO2 paces left as originally labeled ("VO2 pace") pending confirmation.</b> The Sep 6 10K will provide a real, current 10K split — better data than today's estimate. Once available, true up these later sessions' pace targets against the actual result rather than the estimate used here.</li>
+    <li><b>Week 8 mileage restored from ~36mi back up to ~54mi — the mile race does not warrant 10K-style taper treatment.</b> An all-out mile is ~5–6 minutes, overwhelmingly neuromuscular/anaerobic, with minimal glycogen depletion and comparatively little eccentric muscle damage — nothing like the 25–40 minutes of sustained aerobic/glycolytic stress a goal 10K effort produces. The Aug 6 update correctly restructured Saturday around the race (out/race/back) but also softened Tuesday and dropped the week's long run entirely, which over-applies 10K-taper logic to a much smaller stimulus.</li>
+    <li><b>Tuesday Q1 restored to 5×1mi @ MP</b> (was softened to easy/strides-only). No physiological reason to sacrifice a real quality dose 4 days out from a 5-minute race.</li>
+    <li><b>Thursday Q2 threshold session unchanged</b> — sits a comfortable 4 full days post-10K, no conflict with Saturday's mile.</li>
+    <li><b>Saturday's race-day structure (~1.5mi out / race / ~1.5mi back) unchanged</b> — this part of the Aug 6 revision was already right.</li>
+    <li><b>Sunday changed from Easy/rest to the long run (~19mi w/ 10mi @ MP)</b> that Saturday's race displaced, rather than dropping it from the week. MP segment stays conditional on how the legs feel coming off Saturday's race — back-to-back race-Saturday/long-run-Sunday is real loading, but the mile's low fatigue cost makes that an acceptable trade.</li>
+  </ul>
+
+  <h2>What Changed in Prior Update (Aug 6, 2026)</h2>
+  <ul>
+    <li><b>VO2/Interval pace recalibrated from 6:20–6:30/mi to 6:05–6:15/mi for Weeks 6–7.</b> The original target was slower than current 10K pace (~6:20/mi) — by Daniels' I-pace framework, true VO2max-eliciting Interval pace should be faster than 10K pace, so a rep pace at or slower than 10K pace lands in threshold/cruise-interval territory rather than true VO2max stimulus. Applied to Week 6 (5×1000m) and Week 7 (6×800m) — the sessions built as the pace-checkpoint for this phase.</li>
+    <li><b>Week 10 (6×1000m) and Week 12 (5×1000m) VO2 paces left as originally labeled pending confirmation</b> — the Sep 6 10K will provide a real, current 10K split to true these up against.</li>
     <li><b>Race links added:</b> Sep 6 10K confirmed as the <a href="https://aroundthecrown10k.com/" target="_blank" rel="noopener">Around the Crown 10K</a>; Sep 12 mile race confirmed as the <a href="https://southendshuffle.raceroster.com/" target="_blank" rel="noopener">South End Shuffle</a>.</li>
-    <li><b>Week 8 Saturday (Sep 12) restructured for the South End Shuffle mile race</b> — replaces the planned 19mi w/10mi-@-MP long run with an easy ~1.5mi out, the race itself, and an easy ~1.5mi back (~4–5mi total). This was the previously-agreed plan for the mile race; applying it here now that both races are formally on the calendar rather than leaving Saturday showing a full MP long run that no longer reflects intent. Week 8 volume drops from a planned 57mi to ~36mi as a result — a second deliberate trade in as many weeks, both tied to goal-effort races rather than compliance misses. Tuesday's softening (already noted) stays tied to 10K recovery timing; Saturday's change is new and tied to the mile race itself.</li>
+    <li><b>Week 8 Saturday (Sep 12) restructured for the South End Shuffle mile race</b> — replaced the planned 19mi w/10mi-@-MP long run with an easy ~1.5mi out, the race, and an easy ~1.5mi back (~4–5mi total). Week 8 volume dropped from a planned 57mi to ~36mi as a result.</li>
   </ul>
 
   <h2>What Changed in Prior Update (Aug 4, 2026)</h2>
   <ul>
-    <li><b>Week 7 restructured around a goal-effort 10K on Sun, Sep 6.</b> The race lands the day after Saturday's originally-planned 18mi/8mi-MP long run and only ~48hr before Tuesday Sep 8's planned MP quality session — stacking a hard MP long run, an all-out race, and a quality session with no true recovery day between any of them, in direct conflict with the protected long-run→rest and 48hr-buffer-before-next-quality-session guardrails. Resolution: Saturday's long run is cut to an easy 4–6mi + strides rather than trimmed and still run hard, since an MP long run isn't meaningfully more recoverable than the race it would precede — the 10K itself now serves as the week's specific-endurance/quality stimulus. Thursday's MP session that week is pulled back to easy + strides (3 days out). Week 7 volume drops from a planned 54mi to ~35mi as a deliberate trade, not a compliance miss.</li>
-    <li><b>Week 8's Tuesday MP session (5×1mi) softened to easy/strides</b> since it would otherwise fall only ~48hr after an all-out race — too tight for legitimate recovery from a hard 10K. Thursday's threshold session (5mi continuous) becomes the week's first real quality dose instead, landing a full 4 days post-race. Saturday's long run (19mi w/10mi @ MP) is untouched — 6 days out is enough buffer.</li>
-    <li>Race splits/HR from the 10K to be treated as a calibration data point against the current LT2 estimate and Runna-derived paces once run.</li>
+    <li><b>Week 7 restructured around a goal-effort 10K on Sun, Sep 6.</b> The race lands the day after Saturday's originally-planned 18mi/8mi-MP long run and only ~48hr before Tuesday Sep 8's planned MP quality session — stacking a hard MP long run, an all-out race, and a quality session with no true recovery day between any of them. Resolution: Saturday's long run cut to an easy 4–6mi + strides; the 10K itself serves as the week's specific-endurance/quality stimulus. Thursday's MP session pulled back to easy + strides (3 days out). Week 7 volume dropped from a planned 54mi to ~35mi as a deliberate trade, not a compliance miss.</li>
+    <li><b>Week 8's Tuesday MP session (5×1mi) softened to easy/strides</b> since it would otherwise fall only ~48hr after an all-out race. Thursday's threshold session (5mi continuous) became the week's first real quality dose instead, landing a full 4 days post-race. Saturday's long run (19mi w/10mi @ MP) left untouched — 6 days out is enough buffer.</li>
   </ul>
 
   <h2>What Changed in Prior Update (Jul 28, 2026)</h2>
