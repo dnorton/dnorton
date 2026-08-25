@@ -2,10 +2,12 @@
 layout: default
 title: Posts
 description: Posts by Daniel Norton
+permalink: /posts/
 ---
 
 <ul class="post-list">
-{% for post in site.posts %}
+{% assign writing = site.writing | sort: 'date' | reverse %}
+{% for post in writing %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     <p>{{ post.date | date: "%B %-d, %Y" }}</p>

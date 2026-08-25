@@ -2,6 +2,7 @@
 layout: default
 title: About
 description: About Daniel Norton
+permalink: /about/
 ---
 
 Hi, I'm Daniel! I'm a principal software engineer at [WCG](https://wcgclinical.com).
