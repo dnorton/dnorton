@@ -1,4 +1,10 @@
 title: Daniel Norton
 description:
+permalink: /posts/:title/
 plugins: []
+exclude:
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 

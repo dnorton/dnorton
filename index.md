@@ -4,14 +4,10 @@ title: Daniel Norton
 description: Principal Software Engineer
 ---
 
-Hi, I'm Daniel! I'm a principal software engineer at [WCG](https://wcgclinical.com).
-
-Happy to chat about AWS, running, craft beer 🍺, or UGA football.
+Hi, I'm Daniel! I'm a principal software engineer. Happy to chat about AWS, running, craft beer 🍺, or UGA football.
 
 ### Pages
 
-- [Awesome Routes](./awesome-routes/)
-  A collection of my favorite running and cycling routes.
 - [Charlotte Marathon 2026 Training Calendar](./charlotte-marathon/calendar.html)
   My 17-week training plan for the Novant Health Charlotte Marathon on November 14, 2026.
 - [My Dev Notes](https://notes.dnorton.org)

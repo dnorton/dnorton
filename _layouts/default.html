@@ -20,8 +20,11 @@
                     <p class="subtitle">Principal Software Engineer</p>
                 </div>
             </div>
-            <nav>
-                <!-- Add navigation if needed later -->
+            <nav class="site-nav">
+                <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a>
+                <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} class="active"{% endif %}>About</a>
+                <a href="{{ '/posts/' | relative_url }}"{% if page.url == '/posts/' or page.layout == 'post' %} class="active"{% endif %}>Posts</a>
+                <a href="{{ '/awesome-routes/' | relative_url }}"{% if page.url contains '/awesome-routes/' %} class="active"{% endif %}>Routes</a>
             </nav>
         </header>
 
