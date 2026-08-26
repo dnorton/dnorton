@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Posts
-description: Posts by Daniel Norton
-permalink: /posts/
+title: Notes
+description: Notes by Daniel Norton
+permalink: /notes/
 ---
 
 <ul class="post-list">

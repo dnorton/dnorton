@@ -3,7 +3,7 @@ description:
 collections:
   writing:
     output: true
-    permalink: /posts/:title/
+    permalink: /notes/:title/
 plugins: []
 exclude:
   - CLAUDE.md
