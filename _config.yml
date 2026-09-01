@@ -1,6 +1,9 @@
 title: Daniel Norton
 description:
-permalink: /posts/:title/
+collections:
+  writing:
+    output: true
+    permalink: /notes/:title/
 plugins: []
 exclude:
   - CLAUDE.md
