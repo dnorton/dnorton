@@ -11,7 +11,7 @@ By day I work on AWS, cloud architecture, and platform engineering. By weekend I
 
 ### Right now
 
-- 🏃 Training for the [Charlotte Marathon](/charlotte-marathon/calendar.html) on November 14, aiming for 3:20–3:25.
+- 🏃 Ran the Charlotte Marathon in 3:13:39 ([race report](/notes/charlotte-marathon/)), now building toward Boston 2027.
 - 🤖 Managing a team of AI agents
 - 🍺 Still working through the craft beer list on [dnorton @ Untappd](https://untappd.com/user/dnorton)
 

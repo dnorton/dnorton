@@ -14,9 +14,7 @@ I'm happy to chat about craft beer 🍺, UGA football, or anything tech related 
 - [Bluesky](https://bsky.app/profile/dnorton.dev)
 - [Strava](https://www.strava.com/athletes/thednorton)
 
-### Useful Resources
+### Pinned Notes
 
-- [Charlotte Marathon 2026 Training Calendar](./charlotte-marathon/calendar.html)
-  My 17-week training plan for the Novant Health Charlotte Marathon on November 14, 2026.
 - [My Dev Notes](https://notes.dnorton.org)
   A personal wiki of development notes and tips.
