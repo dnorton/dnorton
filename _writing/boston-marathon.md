@@ -42,7 +42,9 @@ Charlotte was a hilly course with 1,158 ft of gain, and I ran the first half on 
 
 ### What's changing
 
-- **No stacking.** Charlotte's quad strain followed a run, a ride, and another run the day after intervals. Wednesday's lift and run club is now the only double after a quality day.
+These are defaults with reasons behind them, not rules. Any of them gives way when the data says a different choice will train me better.
+
+- **Avoid stacking.** Charlotte's quad strain followed a run, a ride, and another run the day after intervals.
 - **Mileage and intensity don't rise in the same weeks.** Weeks 1–3 build volume, weeks 5–8 build rep length, and weeks 8–12 build marathon pace.
 - **Long runs top out around 18–19 miles,** judged by what's in them rather than whether they reach 20. The longest is 19 with 14 at marathon pace.
 - **Training for the course.** Downhill strides from week 6 prepare the quads for the early descents, and hilly long runs prepare for the Newton hills at miles 16–21.
